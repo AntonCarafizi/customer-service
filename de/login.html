@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<title>SpohrSchuhe Kundencenter Anmelden</title>
+		<link rel="stylesheet" type="text/css" href="/css/login.css">
+        <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+        <div class="wrapper">
+            <header>
+                <div class="logo-left">
+                    <a class="home" href="/de/"><img class="logo" src="/img/logo.png" alt="SpohrSchuhe" /></a>
+                    <h1>Kundencenter</h1>
+                </div>
+                <div class="kundeninfo"><div class="kundeninfo-icon" data="Herr"></div><div class="kundeninfo-account"><span class="flag_label">Sprache wechseln zu: </span><a class="flag-en" href="/en/login" title="zu Englisch wechseln"></a></div></div>
+            </header>
+            <h2>Anmelden</h2>
+            <div class="content">
+                <form id="login" action="" method="post">
+                    <input type="email" name="email" id="email" placeholder="Email*" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,3}$" autocomplete="on" required>
+                    <input type="password" name="password" id="password" placeholder="Passwort*" required>
+                    <button type="button" class="submit">Anmelden</button>
+                </form>
+            </div>
+        </div>
+        <footer><div class="footer">© Spohr Schuhe GmbH | <span id="year"></span></div></footer>
+        <script type="text/javascript" src="/js/md5.min.js"></script>
+        <script type="text/javascript" src="/js/de.js"></script>
+		<script type="text/javascript" src="/js/login.js"></script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	    <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+		<title>SpohrSchuhe Customer center addresses</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="/css/addresses.css">
+		<link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css">
+        <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+        <button id="menu-button">&#9776;</button>
+        <div id="menu"><div class="menu_wrapper"><a href="/en/">Purchased items</a><a href="/en/invoices">Invoices</a><a class="active" href="/en/catalog-addresses">Catalog addresses</a><a href="/en/shipping-addresses">Shipping addresses</a><a href="/en/returns">Returns</a></div></div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+        <div class="wrapper">
+            <header>
+                <div class="logo-left">
+                    <a class="home" href="/en/"><img class="logo" src="/img/logo.png" alt="SpohrSchuhe" /></a>
+                    <h1>Customer center</h1>
+                </div>
+                <div class="center">
+                    <input class="search" type="search" value="" placeholder="Search" pattern=".{3,}" /><input class="search_submit" type="submit" value="" />
+                </div>
+                <div class="kundeninfo"><div class="kundeninfo-icon"></div><div class="kundeninfo-account"><span class="flag_label">Switch language to: </span><a class="flag-de" href="/de/catalog-addresses" title="Switch to German"></a><span class="welcome"><strong>Welcome</strong></span><span id="Anrede"></span> <span id="Vorname"></span> <span id="Nachname"></span><span id="Email"></span><a id="logout" href="login" data="Do you really want to logout?">Logout</a></div></div>
+            </header>
+            <h2>My addresses</h2>
+            <div class="content">
+                <div class="main">
+                    <div class="table address relative"><div class="tr info_row relative"><div class="td relative"><span>Catalog address</span></div></div><a href="#" class="remove" data="Do you really want to delete this address?"></a>
+                        <form id="form_address"  action="" method="post">
+                            <input type="hidden" name="id" value="">
+                            <select name="salutation" id="salutation" required="required" aria-required="true" class="is--required">
+                                <option value="" disabled="disabled">Salutation*</option>
+                                <option class="Herr" value="Herr">Mr</option>
+                                <option class="Frau" value="Frau">Mrs</option>
+                                <option class="Firma" value="Firma">Company</option>
+                                <option class="blank" value="blank">No salutation</option>
+                            </select>
+                            <input type="text" name="Vorname" placeholder="Name*" value="" required>
+                            <input type="text" name="Nachname" placeholder="Surname*" value="" required>
+                            <input type="text" name="Firmenname" placeholder="Company name" value="">
+                            <input type="text" name="Strasse" placeholder="Street und Nr.*" value="" required>
+                            <input type="text" name="PLZ" placeholder="Zip code*" value="" required>
+                            <input type="text" name="Ort" placeholder="City*" value="" required>
+                            <!--input type="phone" name="Tel" placeholder="Phone" value="">
+                            <input type="phone" name="TelMobil" placeholder="Cellphone" value="">
+                            <input type="phone" name="Fax" placeholder="Fax" value="">
+                            <input type="checkbox" id="aktiv" name="aktiv" value="1">
+                            <label for="aktiv">Is active</label-->
+                            <button type="button" class="submit">Address save</button>
+                        </form>                    
+                    </div>
+                    <button id="address_add"  class="button" onclick="getForm()">Add new address</button>
+                </div>
+            </div>
+        </div>
+        <footer><div class="footer">© Spohr Schuhe GmbH | <span id="year"></span></div></footer>
+        <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/js/en.js"></script>
+        <script type="text/javascript" src="/js/addresses_catalog.js"></script>
+	</body>
+</html>

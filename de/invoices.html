@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+		<title>SpohrSchuhe Kundencenter Rechnung</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="/css/invoices.css">
+        <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+        <button id="menu-button">&#9776;</button>
+        <div id="menu"><div class="menu_wrapper"><a href="/de/">Gekaufte Artikel</a><a class="active" href="/de/invoices">Rechnung</a><a href="/de/catalog-addresses">Katalogadressen</a><a href="/de/shipping-addresses">Lieferadressen</a><a href="/de/returns">Rücksendungen</a></div></div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+        <div class="wrapper">
+            <header>
+                <div class="logo-left">
+                    <a class="home" href="/de/"><img class="logo" src="/img/logo.png" alt="SpohrSchuhe" /></a>
+                    <h1>Kundencenter</h1>
+                </div>
+                <div class="center">
+                    <input class="search" type="search" value="" placeholder="Suchbegriff eingeben" pattern=".{3,}" /><input class="search_submit" type="submit" value="" />
+                </div>
+                <div class="kundeninfo"><div class="kundeninfo-icon"></div><div class="kundeninfo-account"><span class="flag_label">Sprache wechseln zu: </span><a class="flag-en" href="/en/invoices" title="zu Englisch wechseln"></a><span class="welcome"><strong>Willkommen</strong></span> <span id="Anrede"></span> <span id="Vorname"></span> <span id="Nachname"></span><span id="Email"></span><a id="logout" href="login" data="Wollen Sie abmelden?">Abmelden</a></div></div>
+            </header>
+            <h2>Rechnung</h2>
+            <div class="content">
+                <div class="main">
+                    <div id="rechnung" class="table"><div class="tr"><div class="art_col td"></div><div class="sort_col td"><span id="order" class="desc">Rechnungsnummer <i></i></span></div><div class="artikel_col td">Artikel</div><div class="right td">Rechnungsbetrag</div><div class="td">Auftragsnummer</div><div class="td">Datum</div></div></div>
+                    <button id="more-results" class="more-results" onclick="moreResults();" >weitere Ergebnisse</button>
+                </div>
+            </div>
+        </div>
+        <footer><div class="footer">© Spohr Schuhe GmbH | <span id="year"></span></div></footer>
+        <script type="text/javascript" src="/js/de.js"></script>
+        <script type="text/javascript" src="/js/invoices.js"></script>
+	</body>
+</html>

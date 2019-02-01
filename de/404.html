@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		<title>SpohrSchuhe Kundencenter 404</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="/css/404.css?timestamp=1234567890">
+        <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+        <button id="menu-button">&#9776;</button>
+        <div id="menu"><div class="menu_wrapper"><a href="/de/">Gekaufte Artikel</a><a href="/de/invoices">Rechnung</a><a href="/de/catalog-addresses">Katalogadressen</a><a href="/de/shipping-addresses">Lieferadressen</a><a href="/de/returns">Rücksendungen</a></div></div>
+        <div id="home" class="wrapper">
+            <header>
+                <div class="logo-left">
+                    <a class="home" href="/de/"><img class="logo" src="/img/logo.png" alt="SpohrSchuhe" /></a>
+                    <h1>Kundencenter</h1>
+                </div>
+            </header>
+            <h2>Seite nicht gefunden</h2>
+            <div class="content"><div class="main">Bitte gehen Sie nach <a href="/de/">Homepage</a>.</div></div>
+        </div>
+        <footer><div class="footer">© Spohr Schuhe GmbH | <span id="year"></span></div></footer>
+        <script>
+          document.getElementById('year').innerText = (new Date).getFullYear();
+          $('#menu-button').on('click', function(){ $('#menu').slideToggle('fast'); });
+        </script>
+	</body>
+</html>

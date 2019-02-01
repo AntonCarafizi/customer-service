@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	    <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+		<title>SpohrSchuhe Customer center purchased items</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="/css/artikel.css">
+		<link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css">
+        <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+        <button id="menu-button">&#9776;</button>
+        <div id="menu"><div class="menu_wrapper"><a href="/en/">Purchased items</a><a href="/en/invoices">Invoices</a><a href="/en/catalog-addresses">Catalog addresses</a><a href="/en/shipping-addresses">Shipping addresses</a><a href="/en/returns" class="active">Returns</a></div></div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+        <div class="wrapper">
+            <header>
+                <div class="logo-left">
+                    <a class="home" href="/en/"><img class="logo" src="/img/logo.png" alt="SpohrSchuhe" /></a>
+                    <h1>Customer center</h1>
+                </div>
+                <div class="center">
+                    <input class="search" type="search" value="" placeholder="Search" pattern=".{3,}" /><input class="search_submit" type="submit" value="" />
+                </div>
+                <div class="kundeninfo"><div class="kundeninfo-icon"></div><div class="kundeninfo-account"><span class="flag_label">Switch language to: </span><a class="flag-de" href="/de/" title="Switch to German"></a><span class="welcome"><strong>Welcome</strong></span><span id="Anrede"></span> <span id="Vorname"></span> <span id="Nachname"></span><span id="Email"></span><a id="logout" href="login" data="Do you really want to logout?">Logout</a></div></div>
+            </header>
+            <h2>Returns</h2>
+            <div class="content">
+                <div class="main">
+                    <div class="top-bar">
+                        <button class="filter">Filtern</button>
+                        <div class="search_wrapper">
+                            <label for="datepicker-from">From: </label>
+                            <input type = "text" id = "datepicker-from">
+                            <label for="datepicker-to">To: </label>
+                            <input type = "text" id = "datepicker-to">
+                        </div>
+                    </div>
+                    <div id="artikel" class="table"><div class="tr"><div class="td"></div><div class="artikel_col td">Item</div><div class="groesse td">Size</div><div class="td">Price</div><div class="sort_col td"><span id="order" class="desc">Order <i></i></span></div><div class="status_col td">Status</div></div></div>
+                    <button id="more-results" class="more-results" onclick="moreResults();">More results</button>
+                </div>
+            </div>
+        </div>
+        <footer><div class="footer">© Spohr Schuhe GmbH | <span id="year"></span></div></footer>
+        <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/js/en.js"></script>
+        <script type="text/javascript" src="/js/artikel.js"></script>
+	</body>
+</html>

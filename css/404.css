@@ -1,0 +1,37 @@
+@font-face { font-family: 'MainFont'; src: url('/fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype'); }
+body { font-family: 'Fira Sans', sans-serif; color: #000; line-height: 25px; background-color: #fff; background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; margin: 0; }
+a { text-decoration: none; color: #000; cursor: pointer; }
+a:hover { text-decoration: none; color: #b30000; }
+button { font-family: 'Fira Sans', sans-serif; font-size: 1em; background-color: #690000; color: #fff; border: none; cursor: pointer; padding: 10px; }
+button:hover { background-color: #b30000; }
+h1 { line-height: 10px; }
+footer { position: absolute; bottom: 0px; width: 100%; box-sizing: border-box; background-color: #000; text-align: center; box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2); z-index: 4; color: #fff; padding: 10px 15px 10px 15px; }
+.wrapper { box-sizing: border-box; padding: 10px 20px 10px 20px; width: 1300px; margin: 0 auto; background-color: #fff; }
+.main { background-color: #fff; }
+.content { background-color: #fff; }
+header { margin: 20px 0px 100px 0px; }
+header div{ display: inline-block; vertical-align: top; }
+.menu_wrapper { box-sizing: border-box; padding: 0px 20px 0px 20px; width: 1300px; margin: 0 auto; text-align: left; }
+#menu { display: block; position: absolute; top: 150px; width: 100%; background: #f2f2f2; background-image: url('/img/scanlines.png'); text-align: center; color: #fff; z-index: 2; text-transform: uppercase; }
+#menu a { color: #000; display: inline-block; padding: 10px 15px 10px 15px; border-left: 1px solid #fff; }
+#menu a:last-of-type { border-right: 1px solid #fff; }
+#menu a:hover { cursor: pointer; color: #690000; background-color: #fff; }
+#menu a.active { pointer-events: none; cursor: text; color: #fff; background-color: #77121d; }
+#menu-button { display: none; background: #fff; color: #690000; padding: 0px 10px 0px 10px; font-size: 30px; }
+#myBtn { display: none; position: fixed; bottom: 10px; right: 10px; width: 64px; height: 64px; z-index: 99; opacity: 0.5; background: #fff url('/img/arrow-up.png') center; cursor: pointer; border-radius: 100%; }
+
+@media screen and (max-width: 1100px){
+    body, .big { font-size: 1em; }
+    header, footer, #menu, .top-bar, .wrapper, .right, .table, .tr, .td, .logo, .center, .multi_orders, .confirm, .success, .filter, .error_popup, .status_action, .yes, .no { display: block; width: 100%; text-align: center; box-sizing: border-box; }
+    .logo { max-width: 309px; margin: 0px auto; }
+    .menu_wrapper { padding: 0px; width: auto; }
+    #menu-button { display: block; }
+    #menu { display: none; position: relative; top: 10px; }
+    #menu a { display: block; padding: 15px; }
+    #menu a.active { padding-left: 30px; }
+    header { margin: 0px; line-height: 35px; }
+    .content { width: 100%; overflow: hidden; }
+    header div { display: block; }
+    .kundeninfo-icon { margin: 0px auto; }
+    .logo-left .home { position: absolute; display: block; top: 10px; left: 60px; width: 250px; }
+}
